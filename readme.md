@@ -4,6 +4,10 @@
  - instalar pyarrow y pandas como dependencias
  - Ejecutar primero escritura.py para obtener los archivos .orc
  - Ejecutar lectura_datos.py y lectura_metadatos.py para analizar estructura interna y velocidad de lectura.
+
+## Outputs:
+
+### escritura.py
 Creando datos de ejemplo
 ✓ Dataset creado: 100,000 filas, 7 columnas
   Columnas: ['id_transaccion', 'usuario', 'producto', 'precio', 'cantidad', 'timestamp', 'categoria']
@@ -25,6 +29,7 @@ Escribiendo archivos con diferentes compresiones...
 Leyendo archivo ORC completo
 ✓ Archivo leído: 100,000 filas
 
+### lectura_datos.py
 Primeras 3 filas leídas:
    id_transaccion    usuario  ...           timestamp    categoria
 0               1  usuario_0  ... 2024-01-01 00:00:00  Electrónica
@@ -38,6 +43,8 @@ Leyendo solo columnas específicas
   Todas las columnas : 0.0077s
   Solo 2 columnas: 0.0021s
   Mejora: 3.74x más rápido
+
+### lectura_metadatos.py
 Explorando metadata del archivo ORC
 
 INFORMACIÓN GENERAL:
