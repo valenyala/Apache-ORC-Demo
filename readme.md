@@ -1,3 +1,9 @@
+# Demo Lectura y Escritura Apache ORC
+
+## Instrucciones:
+ - instalar pyarrow y pandas como dependencias
+ - Ejecutar primero escritura.py para obtener los archivos .orc
+ - Ejecutar lectura_datos.py y lectura_metadatos.py para analizar estructura interna y velocidad de lectura.
 Creando datos de ejemplo
 ✓ Dataset creado: 100,000 filas, 7 columnas
   Columnas: ['id_transaccion', 'usuario', 'producto', 'precio', 'cantidad', 'timestamp', 'categoria']
